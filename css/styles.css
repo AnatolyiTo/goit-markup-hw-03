@@ -1,0 +1,274 @@
+:root {
+    --main-btn-color: #ffffff;
+    --second-btn-color: #212121;
+    --about-title-color: #212121;
+    --about-title-type-color: #757575;
+    --accent-color: #2196F3;
+    --benefits-title: #212121;
+    --benefits-text: #757575;
+    --masters-item-text: #757575;
+    --link-text: rgba(255, 255, 255, 0.6);
+    --background-color: #E5E5E5;
+    --background-second-color: #ffffff;
+    --background-link-color: #2F303A;
+
+}
+
+/* p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0; */
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--background-color);
+}
+
+/* .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+} */
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link.current {
+    color: var(--accent-color);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.logo-top {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--about-title-color);
+}
+
+.logo-bottom {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--main-btn-color);
+}
+
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus,
+.header-mail:hover,
+.header-mail:focus,
+.footer-location:hover,
+.footer-location:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--accent-color);
+}
+
+.hero,
+.gallery,
+.benefits,
+.masters,
+.hero-portfolio {
+    background-color: var(--background-second-color);
+}
+
+/*--------------------------------------HEADER------------------------------------*/
+.header {
+    background-color: var(--background-second-color);
+    padding-top: 32px;
+}
+
+/* .header-list {
+    display: flex;
+} */
+
+.header-link {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--second-btn-color);
+}
+
+.header-tel,
+.header-mail {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--about-title-type-color);
+}
+
+/*--------------------------------------HERO------------------------------------*/
+.hero-main-button:hover,
+.hero-main-button:focus {
+    color:var(--second-btn-color);
+}
+
+.hero-second-button:hover,
+.hero-second-button:focus {
+    color: var(--main-btn-color);
+    background-color: var(--accent-color);
+}
+
+.hero-portfolio {
+    color: var(--main-btn-color);
+}
+
+/* .hero {
+    color: var(--main-btn-color);
+} */
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-main-button {
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--main-btn-color);
+    background-color: var(--accent-color);
+}
+
+.hero-second-button {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--second-btn-color);
+}
+
+.hero-about-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--about-title-color);
+}
+
+.hero-about-title-type {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--about-title-type-color);
+}
+
+/*--------------------------------------BENEFITS------------------------------------*/
+.benefits-item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--benefits-title);
+}
+
+.benefits-item-text {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--benefits-text);
+}
+
+/*--------------------------------------MASTERS------------------------------------*/
+.gallery-top-title,
+.masters-top-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.masters-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.masters-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--masters-item-text);
+}
+
+/*--------------------------------------FOOTER------------------------------------*/
+.footer {
+    background-color: var(--background-link-color);
+}
+
+.footer-item {
+    font-style: normal;
+}
+
+.footer-location {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-btn-color);
+}
+
+.footer-mail,
+.footer-tel {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color:var(--link-text)
+}
