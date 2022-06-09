@@ -14,13 +14,21 @@
 
 }
 
-/* p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 0;
-    padding-left: 0; */
+    padding-left: 0;
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -29,12 +37,12 @@ body {
     background-color: var(--background-color);
 }
 
-/* .container {
+.container {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-} */
+}
 
 .list {
     list-style: none;
@@ -50,6 +58,10 @@ body {
 
 .pointer {
     cursor: pointer;
+}
+
+img {
+    display: block;
 }
 
 .visually-hidden {
@@ -110,7 +122,6 @@ body {
     color: var(--accent-color);
 }
 
-.hero,
 .gallery,
 .benefits,
 .masters,
@@ -121,12 +132,23 @@ body {
 /*--------------------------------------HEADER------------------------------------*/
 .header {
     background-color: var(--background-second-color);
-    padding-top: 32px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
-/* .header-list {
+.header .container {
     display: flex;
-} */
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.header-list,
+.header-link {
+    display: flex;
+}
 
 .header-link {
     font-weight: 500;
@@ -143,35 +165,31 @@ body {
     color: var(--about-title-type-color);
 }
 
-/*--------------------------------------HERO------------------------------------*/
-.hero-main-button:hover,
-.hero-main-button:focus {
-    color:var(--second-btn-color);
+.header-connect {
+    margin-left: auto;
 }
 
-.hero-second-button:hover,
-.hero-second-button:focus {
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/*--------------------------------------BUTTON------------------------------------*/
+.main-button:hover,
+.main-button:focus {
+    color: var(--second-btn-color);
+}
+
+.second-button:hover,
+.second-button:focus {
     color: var(--main-btn-color);
     background-color: var(--accent-color);
+    border: 1px solid var(--main-btn-color);
+    border-radius: 4px;
 }
 
-.hero-portfolio {
-    color: var(--main-btn-color);
-}
 
-/* .hero {
-    color: var(--main-btn-color);
-} */
 
-.hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-.hero-main-button {
+.main-button {
     text-decoration: none;
     font-family: inherit;
     font-weight: 700;
@@ -180,9 +198,15 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-btn-color);
     background-color: var(--accent-color);
+    min-width: 200px;
+    height: 50px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    margin: auto;
+    display: block;
 }
 
-.hero-second-button {
+.second-button {
     text-decoration: none;
     font-family: inherit;
     font-style: normal;
@@ -191,6 +215,48 @@ body {
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--second-btn-color);
+    height: 50px;
+    border: 1px solid var(--main-btn-color);
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.button1 {
+    width: 73px;
+}
+
+.button2 {
+    width: 128px;
+}
+
+.button3 {
+    width: 145px;
+}
+
+.button4 {
+    width: 103px;
+}
+
+.button5 {
+    width: 130px;
+}
+
+/*--------------------------------------HERO------------------------------------*/
+.hero {
+    color: var(--main-btn-color);
+    background-color: var(--background-link-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .hero-about-title {
@@ -199,65 +265,148 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--about-title-color);
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
-.hero-about-title-type {
+.hero-about-type {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--about-title-type-color);
 }
 
-/*--------------------------------------BENEFITS------------------------------------*/
-.benefits-item-title {
+.hero-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hero-list {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.hero-about-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.hero-about-list > .hero-about-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/*---------------------------------BENEFITS------------------------------------*/
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.benefits-list {
+    display: flex;
+    margin-right: 4px;
+}
+
+.benefits-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--benefits-title);
+    margin-bottom: 10px;
 }
 
-.benefits-item-text {
+.benefits-text {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--benefits-text);
 }
 
-/*--------------------------------------MASTERS------------------------------------*/
-.gallery-top-title,
-.masters-top-title {
+/*---------------------------------GALLERY-------------------------------------*/
+.gallery-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.gallery-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
-.masters-item-title {
+
+.gallery-item+.gallery-item {
+    margin-left: 30px;
+}
+
+/*---------------------------------MASTERS-------------------------------------*/
+.masters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.masters-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.masters-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.masters-item-text {
+.masters-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--masters-item-text);
+    margin-bottom: 30px;
 }
+
+.masters-list {
+    display: flex;
+    margin-right: -30px;
+}
+
+.masters-item {
+    flex-basis: calc(100% / 3 - 30px);
+}
+
 
 /*--------------------------------------FOOTER------------------------------------*/
 .footer {
     background-color: var(--background-link-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.footer-item {
+.footer-link {
     font-style: normal;
+    margin-bottom: 9px;
 }
 
 .footer-location {
@@ -270,5 +419,8 @@ body {
 .footer-tel {
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color:var(--link-text)
+    color: var(--link-text)
+}
+
+.footer-logo {
 }
