@@ -11,7 +11,10 @@
     --background-color: #E5E5E5;
     --background-second-color: #ffffff;
     --background-link-color: #2F303A;
-    --border-porfolio: #EEEEEE;
+    --border-porfolio: #FFFFFF;
+    --team-bg-color: #F5F4FA;
+    --border-color: #eeeeee
+
 }
 
 p,
@@ -124,13 +127,6 @@ img {
     color: var(--accent-color);
 }
 
-.gallery,
-.benefits,
-.masters,
-.hero-portfolio {
-    background-color: var(--background-second-color);
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -180,6 +176,7 @@ img {
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
+
 
 /*--------------------------------------BUTTON------------------------------------*/
 .main-button:hover,
@@ -256,7 +253,6 @@ img {
     letter-spacing: 0.06em;
     color: var(--about-title-color);
     margin-bottom: 4px;
-        margin-top: 20px;
 }
 
 .hero-about-type {
@@ -286,13 +282,18 @@ img {
 }
 
 .hero-about-content {
-    border: 1px solid var(--border-porfolio);
-    border-right: 24px solid var(--border-porfolio);
-    border-left: 24px solid var(--border-porfolio);
-    border-bottom: 20px solid var(--border-porfolio);
+    border: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-top: 0px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    padding: 20px 24px 20px 24px;
 }
 
+.hero-portfolio {
+    background-color: var(--border-porfolio);
+}
 
 /*---------------------------------BENEFITS------------------------------------*/
 .benefits {
@@ -332,6 +333,7 @@ img {
 
 /*---------------------------------GALLERY-------------------------------------*/
 .gallery {
+    background-color: var(--background-second-color);
     padding-top: 0;
 }
 
@@ -354,7 +356,7 @@ img {
 
 /*---------------------------------MASTERS-------------------------------------*/
 .masters {
-    background-color: var(--background-second-color);
+    background-color: var(--team-bg-color)
 }
 
 .masters-title {
@@ -394,7 +396,7 @@ img {
 .masters-item {
     flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
-    border: 1px solid var(--border-porfolio);
+    border: 0px solid var(--border-porfolio);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
